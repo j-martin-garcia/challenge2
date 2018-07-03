@@ -32,9 +32,13 @@ Request body
 * Update a register already exists
 PUT /phone/<id>
 Request body
+    
 {
+
  'name':    'Phone new name',
+ 
  'price': 	 'xxxxx€'
+ 
 }
 
 * Delete a Phone with specified database ID
