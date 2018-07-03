@@ -12,36 +12,27 @@
 # API Instructions
 
 * Return all Phones in the DB
-
- GET /phones
+    GET /phones
 
 * Return a Phone with specified database ID
-
-GET /phone/<id>
+    GET /phone/<id>
 
 * Insert a new Phone in the DB
-
-POST /phones
-
-Request body
-{
- 'name':    'Phone name',
- 'price': 	 'xxx€'
-}
+    POST /phones
+    Request body
+    {
+     'name':    'Phone name',
+     'price': 	 'xxx€'
+    }
 
 * Update a register already exists
-PUT /phone/<id>
-Request body
-    
-{
-
- 'name':    'Phone new name',
- 
- 'price': 	 'xxxxx€'
- 
-}
+    PUT /phone/<id>
+    Request body
+    {
+     'name':    'Phone new name',
+     'price': 	 'xxxxx€'
+    }
 
 * Delete a Phone with specified database ID
-
-DELETE /phone/<id>
+    DELETE /phone/<id>
 
