@@ -11,21 +11,25 @@
 
 # API Instructions
 
-..* Return all Phones in the DB
+* Return all Phones in the DB
+
  GET /phones
 
-..* Return a Phone with specified database ID
+* Return a Phone with specified database ID
+
 GET /phone/<id>
 
-..* Insert a new Phone in the DB
+* Insert a new Phone in the DB
+
 POST /phones
+
 Request body
 {
  'name':    'Phone name',
  'price': 	 'xxx€'
 }
 
-..* Update a register already exists
+* Update a register already exists
 PUT /phone/<id>
 Request body
 {
@@ -33,6 +37,7 @@ Request body
  'price': 	 'xxxxx€'
 }
 
-..* Delete a Phone with specified database ID
+* Delete a Phone with specified database ID
+
 DELETE /phone/<id>
 
