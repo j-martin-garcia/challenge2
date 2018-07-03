@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: app-ingress-prod
+  namespace: prod
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.org/ssl-services: "app"
+    ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  tls:
+    - hosts:
+      - prod.app.com
+      secretName: tls-certificate
+  rules:
+  - host: prod.app.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: app
+          servicePort: 3000
