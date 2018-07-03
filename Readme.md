@@ -35,4 +35,3 @@
 
 * Delete a Phone with specified database ID
     DELETE /phone/<id>
-
